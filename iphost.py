@@ -1,3 +1,6 @@
+import socket
+from colored import fg
+
 #colors
 red=fg('red')
 green=fg('green')

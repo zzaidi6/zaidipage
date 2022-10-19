@@ -7,6 +7,7 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>    
 <py-env>
  - socket
+ - colored
 </py-env>
 </head>
 <body style="background:">
@@ -21,40 +22,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <br>
 <br>
-<h1 style="font-color:green"><py-script>
-import socket
-#from colored import fg
-#colors
-#red=fg('red')
-#green=fg('green')
-#blue=fg('blue')
-#banner
-print()
-print("-----Welcome to the ZaidiShell!------")
-print()
-print("type run to start and then,")
-print("type domain in the entry box.")
-print()
-#main script
-def code():
-  print()
-  ip = input("domain: ")
-  host = socket.gethostbyname(ip)
-  print()
-  print(host+ " is the ip address of " +ip)
-  print()
-  print("url:- http://"+host)
-  print()
-#shell script
-def shell():
-  entry=input("ZaidiShell@=> ")
-  if "run" == entry :
-       code()
-  else :
-       print(red+"error: wrong argument!")
-       print(green)
-       return shell()
-shell()
+<h1 style="font-color:green"><py-script src="iphost.py">
 </py-script></h1>
 </body>
 </html>

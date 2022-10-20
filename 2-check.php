@@ -8,7 +8,8 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
   $users = [
     "joe" => "123456",
     "jon" => "654321",
-    "joy" => "987654"
+    "joy" => "987654",
+    "a"   => "1"
   ];
 
   // (B2) CHECK & VERIFY
@@ -24,6 +25,6 @@ if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
 
 // (C) REDIRECT USER TO HOME PAGE IF SIGNED IN
 if (isset($_SESSION["user"])) {
-  header("Location: index.php"); // SET YOUR OWN HOME PAGE!
+  header("Location: index.html"); // SET YOUR OWN HOME PAGE!
   exit();
 }
